@@ -258,7 +258,7 @@ img {
     url(../images/hero.jpg);
 }
 
-.hero-title {
+.hero__title {
   color: var(--hero-color);
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -271,7 +271,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.button {
   background-color: var(--accent-color);
   color: var(--hero-color);
   letter-spacing: 0.06em;
@@ -289,8 +289,8 @@ img {
 
   transition: background-color 250ms var(--cubic-transm);
 }
-.hero-button:hover,
-.hero-button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--btn-hover-color);
 }
 
@@ -359,15 +359,15 @@ img {
   display: flex;
 }
 
-.features-item {
+.features__unit {
   width: 270px;
 }
 
-.features-item:not(:last-child) {
+.features__unit:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-icon {
+.features__icon {
   background-color: var(--icon-bg-color);
   height: 120px;
   margin-bottom: 30px;
@@ -379,7 +379,7 @@ img {
   border-radius: 4px;
 }
 
-.features-title {
+.features__title {
   color: var(--title-color);
   margin-bottom: 10px;
   font-weight: 700;
@@ -387,12 +387,12 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features-text {
+.features__description {
   font-size: 14px;
   line-height: 1.71;
 }
 /* skills/ 3 picture */
-.thumb {
+.skills__thumb {
   position: relative;
 }
 
@@ -400,7 +400,7 @@ img {
   position: relative;
 }
 
-.thumb-back {
+.skills__content {
   position: absolute;
 
   display: flex;
@@ -422,7 +422,7 @@ img {
 .skills {
   display: flex;
 }
-.skills .item:not(:last-child) {
+.skills__unit:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -442,7 +442,7 @@ img {
 }
 
 /* our command */
-.social-network {
+.social-networks {
   display: flex;
   width: 206px;
   height: 44px;
@@ -452,14 +452,14 @@ img {
   display: flex;
 }
 
-.social-list:not(:last-child) {
+.social-networks__list:not(:last-child) {
   margin-right: 10px;
 }
 
-.our-peoples .item:not(:last-child) {
+.our-peoples__unit:not(:last-child) {
   margin-right: 30px;
 }
-.our-peoples .item {
+.our-peoples__unit {
   text-align: center;
   box-shadow: var(--card-people-shadow);
   border-radius: 0px 0px 4px 4px;
@@ -469,11 +469,11 @@ img {
 .our-command {
   background-color: var(--sub-color);
 }
-.command-content {
+.command-member {
   padding: 30px 32px;
 }
 
-.command-name {
+.command-member__name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -482,13 +482,13 @@ img {
   margin-bottom: 10px;
 }
 
-.command-roles {
+.command-member__position {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
 }
 
-.icon {
+.social-networks__link {
   display: flex;
 
   border-radius: 50%;
@@ -501,8 +501,8 @@ img {
   transition: fill 250ms var(--cubic-transm), background-color 250ms var(--cubic-transm);
 }
 
-.icon:hover,
-.icon:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: var(--accent-color);
   fill: var(--hero-color);
 }
@@ -514,7 +514,7 @@ img {
   margin-right: auto;
 }
 
-.client {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,13 +528,14 @@ img {
   transition: fill 250ms var(--cubic-transm), border 250ms var(--cubic-transm);
 }
 
-.client:hover,
-.client:focus {
+.clients__link:hover,
+.clients__link:focus {
+  overline: none;
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
-.clients-list:not(:last-child) {
+.clients__unit:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -703,7 +704,7 @@ img {
   color: var(--title-color);
 }
 
-.hero-button.send {
+.button.send {
   display: block;
   margin-left: auto;
   margin-right: auto;
