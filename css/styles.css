@@ -576,7 +576,7 @@ img {
   margin-bottom: 9px;
 }
 
-.foot-add {
+.slogan {
   color: var(--hero-color);
   display: inline-block;
   font-weight: 700;
@@ -605,27 +605,17 @@ img {
   margin-right: 70px;
 }
 
-.icon-foot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-
+.social-networks__link--black-theme {
   background-color: var(--icon-foot-color);
   fill: var(--hero-color);
-
-  transition: background-color 250ms var(--cubic-transm);
 }
 
-.icon-foot:hover,
-.icon-foot:focus {
+.social-networks__link--black-theme:hover,
+.social-networks__link--black-theme:focus {
   background-color: var(--accent-color);
 }
 
-.submit {
+.button--alignment {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -636,7 +626,7 @@ img {
   margin-left: 10px;
 }
 
-.email {
+.subscription-form__input {
   width: 358px;
   height: 50px;
 
@@ -654,13 +644,13 @@ img {
 
   transition: border-color 250ms var(--cubic-transm), box-shadow 250ms var(--cubic-transm);
 }
-.email:hover,
-.email:focus {
+.subscription-form__input:hover,
+.subscription-form__input:focus {
   outline: 0;
   border-color: var(--accent-color);
 }
 
-.email::placeholder {
+.subscription-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -671,7 +661,7 @@ img {
   margin-bottom: 20px;
 }
 
-.signup-form {
+.subscription-form {
   display: flex;
 }
 
