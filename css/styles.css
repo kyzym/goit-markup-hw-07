@@ -559,7 +559,7 @@ img {
   margin-bottom: 9px;
 }
 
-.mail-tel a {
+.page-footer__link {
   color: var(--foot-sub-color);
   font-style: normal;
   font-size: 14px;
@@ -567,12 +567,12 @@ img {
   transition: color 250ms var(--cubic-transm);
 }
 
-.mail-tel a:hover,
-.mail-tel a:focus {
+.page-footer__link:hover,
+.page-footer__link:focus {
   color: var(--accent-color);
 }
 
-.foot-mail {
+.page-footer__item {
   margin-bottom: 9px;
 }
 
