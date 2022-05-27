@@ -399,8 +399,8 @@ img {
   position: absolute;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   background-color: var(--skills-bg-color);
   width: 370px;
@@ -514,8 +514,8 @@ img {
 
 .clients__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border: 1px solid var(--icon-nohover-color);
   border-radius: 4px;
   width: 170px;
@@ -757,8 +757,9 @@ img {
 
 .user-form__checkbox-label {
   display: flex;
-  justify-content: center;
+
   align-items: center;
+  justify-content: center;
 
   font-size: 14px;
 

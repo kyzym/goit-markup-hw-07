@@ -61,16 +61,14 @@
 /* site adr */
 .address {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @extend %justalign;
 
     margin-left: auto;
     fill: $sub-text-color;
 }
 
 .address__link {
-    align-items: center;
-    justify-content: center;
+    @extend %justalign;
 
     transition: color $cubic;
     
