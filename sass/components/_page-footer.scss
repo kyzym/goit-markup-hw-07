@@ -20,9 +20,9 @@
 
 .page-footer__link {
     color: $foot-sub-color;
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
     transition: color $cubic;
    
     &:hover,
@@ -101,13 +101,14 @@
     box-shadow: $foot-sabscr-shadow;
 
     transition: border-color $cubic, box-shadow $cubic;
+
+    &:hover,
+        &:focus {
+            outline: 0;
+            border-color: $accent-color;
+        }
 }
 
-.subscription-form__input:hover,
-.subscription-form__input:focus {
-    outline: 0;
-    border-color: $accent-color;
-}
 
 .subscription-form__input::placeholder {
     font-size: 16px;
