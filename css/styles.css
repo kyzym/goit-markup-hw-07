@@ -35,7 +35,7 @@ img {
 /* обьявляем переменные */
 :root {
   --title-color: #212121;
-  --sub-test-color: #757575;
+  --sub-text-color: #757575;
   --logo-color: #000;
   --accent-color: #2196f3;
   --bg-color: #2f303a;
@@ -209,7 +209,7 @@ img {
   margin-left: auto;
   justify-content: flex-end;
 
-  fill: var(--sub-test-color);
+  fill: var(--sub-text-color);
 }
 
 .address__item:not(:last-child) {
@@ -823,7 +823,7 @@ img {
 
 /* portfolio text */
 .card-set__card-subtitle {
-  color: var(--sub-test-color);
+  color: var(--sub-text-color);
   font-size: 16px;
   line-height: 1.88;
 }
