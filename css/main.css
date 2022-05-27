@@ -55,7 +55,7 @@ input {
   margin: 0 auto;
 }
 
-.address, .address__link, .features__icon {
+.address, .address__link, .features__icon, .skills__content, .social-networks__link, .clients__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -304,7 +304,7 @@ input {
   width: 270px;
 }
 
-.features__item :not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -332,9 +332,182 @@ input {
   line-height: 1.71;
 }
 
+.skill {
+  padding-top: 0;
+}
+
+.skills__thumb {
+  position: relative;
+}
+
+.site-nav__underline {
+  position: relative;
+}
+
+.skills__content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  bottom: 0;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 206px;
+  height: 44px;
+}
+
+.social-networks__list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-networks__link:hover, .social-networks__link:focus {
+  background-color: #2196f3;
+  fill: #fff;
+}
+
+.our-peoples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-peoples__item {
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+}
+
+.our-peoples__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-command {
+  background-color: #f5f4fa;
+}
+
+.command-member {
+  padding: 30px 32px;
+}
+
+.command-member__name {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.command-member__position {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover, .clients__link:focus {
+  overline: none;
+  border: 1px solid #2196f3;
+  fill: #2196f3;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .page-footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.page-footer__adr {
+  color: var(--hero-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.page-footer__link {
+  color: var(--foot-sub-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  -webkit-transition: color 250ms var(--cubic-transm);
+  transition: color 250ms var(--cubic-transm);
+}
+
+.page-footer__link:hover,
+.page-footer__link:focus {
+  color: var(--accent-color);
+}
+
+.page-footer__item {
+  margin-bottom: 9px;
 }
 /*# sourceMappingURL=main.css.map */
