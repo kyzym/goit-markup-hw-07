@@ -71,15 +71,13 @@
     &:hover~.user-form__input-icon,
         &:focus~.user-form__input-icon {
     fill: $accent-color;    
-    
-}
+    }
+&:hover,
+&:focus,
+{
+border: 1px solid $accent-color;
 }
 
-.user-form__input:hover,
-.user-form__textarea:hover,
-.user-form__input:focus,
-.user-form__textarea:focus {
-    border: 1px solid $accent-color;
 }
 
 .user-form__textarea {
@@ -93,11 +91,16 @@
     outline: none;
     margin-bottom: 20px;
     transition: border 250ms $cubic-transm;
-}
 
-.user-form__textarea::placeholder {
-    font-size: 12px;
-    color: $placeholder-color;
+    &::placeholder {
+            font-size: 12px;
+            color: $placeholder-color;
+        }
+    
+        &:hover,
+        &:focus {
+            border: 1px solid $accent-color;
+        }
 }
 
 .user-form__checkbox-label {

@@ -2,17 +2,15 @@
     display: flex;
 }
 
-
 .our-peoples__item {
     text-align: center;
     box-shadow: $card-people-shadow;
     border-radius: 0px 0px 4px 4px;
     background-color: $hero-color;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
    
-}
-
-.our-peoples__item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .our-command {

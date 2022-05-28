@@ -107,14 +107,12 @@
             outline: 0;
             border-color: $accent-color;
         }
-}
-
-
-.subscription-form__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: $foot-sub-color;
+    &::placeholder {
+         font-size: 16px;
+         line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $foot-sub-color;
+        }
 }
 
 .subscription-form {
