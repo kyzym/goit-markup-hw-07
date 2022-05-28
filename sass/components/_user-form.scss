@@ -51,15 +51,6 @@
     width: 100%;
 }
 
-.user-form__input:focus-within .user-form__input-icon {
-    fill: $accent-color;
-}
-
-.user-form__input:hover~.user-form__input-icon,
-.user-form__input:focus~.user-form__input-icon {
-    fill: $accent-color;
-}
-
 .user-form__input {
     border: 1px solid $modal-border;
 
@@ -72,6 +63,16 @@
     cursor: pointer;
 
     transition: border $cubic;
+
+    &:focus-within .user-form__input-icon {
+            fill: $accent-color;
+        }
+
+    &:hover~.user-form__input-icon,
+        &:focus~.user-form__input-icon {
+    fill: $accent-color;    
+    
+}
 }
 
 .user-form__input:hover,
@@ -107,22 +108,9 @@
     margin-bottom: 30px;
 }
 
-.user-form__checkbox:hover~.user-form__checkbox-icon {
-    border-color: $accent-color;
-}
-
 .user-form__policy-terms {
     text-decoration: underline;
     color: $accent-color;
-}
-
-.user-form__checkbox:checked~.user-form__checkbox-icon {
-    background-color: $accent-color;
-    border-color: $accent-color;
-}
-
-.user-form__checkbox:focus~.user-form__checkbox-icon {
-    border-color: $accent-color;
 }
 
 .user-form__checkbox-icon {
@@ -138,6 +126,7 @@
 
     transition: border $cubic, background $cubic;
 }
+
 .user-form__checkbox {
     position: absolute;
     width: 1px;
@@ -149,4 +138,17 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+
+    &:hover~.user-form__checkbox-icon {
+            border-color: $accent-color;
+        }
+
+        &:focus~.user-form__checkbox-icon {
+            border-color: $accent-color;
+        }
+
+        &:checked~.user-form__checkbox-icon {
+            background-color: $accent-color;
+            border-color: $accent-color;
+        }
 }
